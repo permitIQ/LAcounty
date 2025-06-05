@@ -4,7 +4,7 @@ import logo from '../assets/sidebar-ul-logo.svg'; // Assuming you have the logo
 const Sidebar = () => {
   const sidebarLinks = [
     { name: 'Hub', href: '#', icon: 'fa-solid fa-signs-post', isActive: false },
-    { name: 'Workspaces', href: '#', icon: 'fa-solid fa-briefcase-blank', isActive: true },
+    { name: 'Workspaces', href: '#', icon: 'fa-solid fa-briefcase', isActive: true },
     { name: 'Maps', href: '#', icon: 'fa-regular fa-map', isActive: false },
     { name: 'Explore', href: '#', icon: 'fa-regular fa-map', isActive: false },
     { name: 'Projects', href: '#', icon: 'fa-regular fa-folder-open', isActive: false },
@@ -13,7 +13,7 @@ const Sidebar = () => {
   ];
 
   const userOptionsLinks = [
-    { name: 'Inbox', href: '/activity/', icon: 'fa-regular fa-bell' },
+    { name: 'Inbox', href: '#', icon: 'fa-regular fa-bell' },
   ];
 
   return (
@@ -29,9 +29,7 @@ const Sidebar = () => {
             {sidebarLinks.map((link) => (
               <a
                 key={link.name}
-                className={`view-icon-link tw-no-underline tw-py-[8px] tw-rounded-[2px] hover:tw-bg-brand-border-sidebar tw-transition-colors tw-duration-300 tw-ease-in-out ${
-                  link.isActive ? 'tw-bg-brand-bg-active is-active active' : ''
-                }`}
+                className={`view-icon-link tw-no-underline tw-py-[8px] tw-rounded-[2px] hover:tw-bg-brand-bg-active tw-transition-colors tw-duration-300 tw-ease-in-out`}
                 data-link-name={link.name}
                 href={link.href}
                 aria-current={link.isActive ? 'page' : undefined}
