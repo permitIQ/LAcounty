@@ -1,0 +1,345 @@
+/* CSS variables from v2Theme.css */
+[data-theme="v2Theme"] {
+    --color-ul-primary-blue: 211deg, 74%, 49%;
+    --color-ul-placeholder: 0deg, 0%, 46%;
+    --color-ul-green: 113deg, 43%, 58%;
+    --color-ul-gray-100: 228deg, 3%, 45%;
+    --color-ul-gray-200: 210deg, 14%, 93%;
+    --color-ul-gray-300: 0deg, 0%, 90%;
+    --color-ul-gray-400: 0deg, 0%, 60%;
+    --color-ul-gray-450: 228deg, 7%, 33%;
+    --color-ul-gray-500: 0deg, 0%, 13%;
+    --color-ul-gray-blue: 217deg, 41%, 39%;
+    --color-ul-dark-blue: 204deg, 100%, 50%;
+    --color-ul-light-blue: 189deg, 100%, 44%;
+    --color-ul-primary-blue-darker: 211deg, 84%, 42%;
+    --color-ul-primary-red: 357deg, 61%, 53%;
+    --color-ul-orange: 45deg, 100%, 51%;
+    --color-ul-primary-red-darker: 357deg, 61%, 43%;
+    --color-ul-divider: 0deg, 0%, 60%;
+    --color-ul-divider-light: 0deg, 0%, 80%;
+    --color-ul-primary-black: 0deg, 0%, 13%;
+    --color-ul-ethica-green: 112deg, 52%, 56%;
+    --color-mirr-gray-100: 210deg, 17%, 98%;
+    --color-mirr-gray-200: 210deg, 14%, 93%;
+    --color-mirr-gray-300: 0deg, 0%, 90%;
+    --color-mirr-gray-400: 210deg, 14%, 93%;
+    --color-mirr-gray-500: 180deg, 2%, 56%;
+    --color-mirr-gray-600: 0deg, 0%, 20%;
+    --color-mirr-agreement-reached: 151deg, 69%, 48%;
+    --color-mirr-in-progress: 210deg, 97%, 65%;
+    --color-mirr-conditional-agreement: 38deg, 100%, 50%;
+    --color-mirr-not-reviewed: 114deg, 15%, 88%;
+    --color-mirr-awaiting-sign-off: 280deg, 63%, 51%;
+    --color-mirr-link: 210deg, 68%, 35%;
+    --z-index-modal-backdrop: 1000010;
+    --z-index-tooltip: 1000013;
+    --z-index-mirr-tenure-page: 9998;
+
+    --font-size-body-1: 1rem;
+    --font-size-body-1-line-height: 1.5rem;
+    --font-size-sm: 0.875rem;
+    --font-size-xs: 0.7788rem;
+    --font-size-body-2: 0.875rem;
+    --font-size-body-2-line-height: 1.25rem;
+    --font-size-subtext: 0.75rem;
+    --font-size-subtext-line-height: 1rem;
+}
+
+/* Copied from example.html comments */
+/* .mapAndReportContainer {
+    overflow: auto;
+    width: calc(100vw - 101px); /* Adjusted for sidebar + margin, can be fine-tuned */
+/* margin-left: 20px; /* This was in the example, but our sidebar setup might make it redundant */
+/* } */
+
+/*
+[data-theme="v2Theme"]*/
+/* We can apply this to the root or body if needed, or use the variables directly */
+
+:root,
+body,
+#root {
+    --color-ul-placeholder: 0deg, 0%, 46%;
+    --color-ul-green: 113deg, 43%, 58%;
+    --color-ul-gray-100: 228deg, 3%, 45%;
+    --color-ul-gray-200: 210deg, 14%, 93%;
+    --color-ul-gray-300: 0deg, 0%, 90%;
+    --color-ul-gray-400: 0deg, 0%, 60%;
+    --color-ul-gray-450: 228deg, 7%, 33%;
+    --color-ul-gray-500: 0deg, 0%, 13%;
+    --color-ul-gray-blue: 217deg, 41%, 39%;
+    --color-ul-dark-blue: 204deg, 100%, 50%;
+    --color-ul-light-blue: 189deg, 100%, 44%;
+    --color-ul-primary-blue: 211deg, 74%, 49%;
+    --color-ul-primary-blue-darker: 211deg, 84%, 42%;
+    --color-ul-primary-red: 357deg, 61%, 53%;
+    --color-ul-orange: 45deg, 100%, 51%;
+    --color-ul-primary-red-darker: 357deg, 61%, 43%;
+    --color-ul-divider: 0deg, 0%, 60%;
+    --color-ul-divider-light: 0deg, 0%, 80%;
+    --color-ul-primary-black: 0deg, 0%, 13%;
+    --color-ul-ethica-green: 112deg, 52%, 56%;
+    --color-mirr-gray-100: 210deg, 17%, 98%;
+    --color-mirr-gray-200: 210deg, 14%, 93%;
+    --color-mirr-gray-300: 0deg, 0%, 90%;
+    --color-mirr-gray-400: 210deg, 14%, 93%;
+    --color-mirr-gray-500: 180deg, 2%, 56%;
+    --color-mirr-gray-600: 0deg, 0%, 20%;
+    --color-mirr-agreement-reached: 151deg, 69%, 48%;
+    --color-mirr-in-progress: 210deg, 97%, 65%;
+    --color-mirr-conditional-agreement: 38deg, 100%, 50%;
+    --color-mirr-not-reviewed: 114deg, 15%, 88%;
+    --color-mirr-awaiting-sign-off: 280deg, 63%, 51%;
+    --color-mirr-link: 210deg, 68%, 35%;
+    --z-index-modal-backdrop: 1000010;
+    --z-index-tooltip: 1000013;
+    --z-index-mirr-tenure-page: 9998;
+    --font-size-body-1: 1rem;
+    --font-size-body-1-line-height: 1.5rem;
+    --font-size-sm: 0.875rem;
+    --font-size-xs: 0.7788rem;
+    --font-size-body-2: 0.875rem;
+    --font-size-body-2-line-height: 1.25rem;
+    --font-size-subtext: 0.75rem;
+    --font-size-subtext-line-height: 1rem;
+}
+
+/* Utility classes from example.html (add more as needed) */
+.ulV2Main {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+}
+
+.mapOverlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    opacity: 0;
+    display: none;
+    z-index: 1000004;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mapOverlayVisible {
+    opacity: 0.2;
+    display: block;
+    transition: opacity 200ms linear;
+}
+
+/* Styles for the modal - you might want to scope these or use a CSS-in-JS solution if it becomes complex */
+.ul-user-projects-manager-save-user-project-modal {
+    position: fixed;
+    /* Or absolute, depending on desired behavior */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: var(--z-index-modal-backdrop, 1000010);
+    /* Use CSS var */
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ul-user-projects-manager-save-user-project-modal .content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ul-user-projects-manager-save-user-project-modal .header {
+    font-size: 1.25rem;
+    /* Equivalent to tw-text-xl */
+    font-weight: 600;
+    /* Equivalent to tw-font-semibold */
+    margin-bottom: 1rem;
+    /* Equivalent to tw-mb-4 */
+}
+
+.ul-user-projects-manager-save-user-project-modal .padding-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* Spacing between form elements */
+}
+
+.ul-user-projects-manager-save-user-project-modal .text-input .header-row,
+.ul-user-projects-manager-save-user-project-modal .ul-multi-select-dropdown-with-pills .header-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+    /* Equivalent to tw-mb-1 */
+}
+
+.ul-user-projects-manager-save-user-project-modal .label {
+    font-size: var(--font-size-sm, 0.875rem);
+    color: hsl(var(--color-ul-gray-450, 228deg 7% 33%));
+}
+
+.ul-user-projects-manager-save-user-project-modal .help-text {
+    font-size: var(--font-size-xs, 0.7788rem);
+    color: hsl(var(--color-ul-gray-400, 0deg 0% 60%));
+}
+
+.ul-user-projects-manager-save-user-project-modal .input,
+.ul-user-projects-manager-save-user-project-modal .input-field {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    /* Equivalent to tw-py-2 tw-px-3 */
+    border: 1px solid hsl(var(--color-ul-gray-300, 0deg 0% 90%));
+    border-radius: 2px;
+}
+
+.ul-user-projects-manager-save-user-project-modal .input-wrapper {
+    position: relative;
+}
+
+.ul-user-projects-manager-save-user-project-modal .input-container {
+    /* styles for input container */
+}
+
+.ul-user-projects-manager-save-user-project-modal .dropdown {
+    /* styles for dropdown */
+    display: none;
+    /* Hidden for now */
+}
+
+.ul-user-projects-manager-save-user-project-modal .action-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    /* Spacing between buttons */
+    margin-top: 1rem;
+}
+
+/* Basic button styling (can be refined) */
+.ul-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    font-weight: 600;
+    /* Equivalent to tw-font-semibold */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.ul-btn-small {
+    padding: 0.25rem 0.75rem;
+    font-size: var(--font-size-sm, 0.875rem);
+}
+
+.ul-btn-solid-style.ul-btn-primary-action {
+    background-color: hsl(var(--color-ul-primary-blue, 211deg 74% 49%));
+    color: white;
+    border: 1px solid hsl(var(--color-ul-primary-blue, 211deg 74% 49%));
+}
+
+.ul-btn-solid-style.ul-btn-primary-action:hover {
+    background-color: hsl(var(--color-ul-primary-blue-darker, 211deg 84% 42%));
+    border-color: hsl(var(--color-ul-primary-blue-darker, 211deg 84% 42%));
+}
+
+.ul-btn-solid-style.ul-btn-secondary-action {
+    background-color: white;
+    color: hsl(var(--color-ul-gray-450, 228deg 7% 33%));
+    border: 1px solid hsl(var(--color-ul-gray-300, 0deg 0% 90%));
+}
+
+.ul-btn-solid-style.ul-btn-secondary-action:hover {
+    background-color: hsl(var(--color-ul-gray-200, 210deg 14% 93%));
+}
+
+/* Ensure Tailwind can pick up colors defined with CSS variables if not already configured */
+.hover\:tw-bg-\[\#EDEDF2\]:hover {
+    background-color: #EDEDF2;
+}
+
+.tw-text-ul-text-black {
+    color: hsl(var(--color-ul-primary-black));
+}
+
+.tw-bg-\[\#E8F1FC\] {
+    background-color: #E8F1FC;
+}
+
+.tw-text-\[\#4D4F59\] {
+    color: #4D4F59;
+}
+
+.tw-border-\[\#EDEDF2\] {
+    border-color: #EDEDF2;
+}
+
+.tw-border-ul-gray-300 {
+    border-color: hsl(var(--color-ul-gray-300));
+}
+
+.tw-bg-ul-gray-300 {
+    background-color: hsl(var(--color-ul-gray-300));
+}
+
+/* Adapted from _ulsidebar.scss */
+.ul-sidebar {
+    /* display: flex; flex-flow: column nowrap; align-items: center; These are covered by Tailwind */
+    position: relative;
+    /* Retained from SCSS, though Tailwind's `tw-relative` can also be used if preferred */
+    /* width: 120px; Covered by Tailwind tw-w-[120px] or theme.width.sidebar */
+    flex-shrink: 0;
+    /* Ensures sidebar doesn't shrink if content grows */
+}
+
+.ul-sidebar>.sidebar-content {
+    /* display: flex; flex-direction: column; height: 100%; Covered by Tailwind */
+}
+
+/* Minimal styling for .sidebar-icon-button if needed beyond Tailwind */
+.sidebar-icon-button {
+    border: none;
+    background: none;
+    position: relative;
+    /* For potential badge/overlay positioning */
+    /* padding-block: 1px; Tailwind p- or py- can handle this */
+}
+
+
+/* Adapted from _ultopbar.scss */
+/* .top-bar class is used in Header.tsx and styled with Tailwind.
+   The example.html has height 4rem (h-16), which is $top-bar-height: 3.75rem; in SCSS. Our Tailwind config uses 4rem.
+   The z-index is tw-z-[1000003] in Header.tsx, SCSS uses map-get($zIndex, top-bar).
+   Other properties like display:flex, align-items:center, justify-content:space-between are handled by Tailwind.
+*/
+
+/* Styles for .workspace-picker and its children if Tailwind isn't sufficient */
+/* Example: If specific padding/margins from SCSS are not easily replicated by Tailwind utilities on the elements. */
+
+.workspace-picker .focus-within\:tw-outline {
+    /* Target the wrapper for the input */
+    /* SCSS might have specific styles for the dropdown appearance not covered by generic input styling */
+}
+
+.workspace-picker input {
+    /* The example.html uses inline styles for the input, which generally take precedence.
+     If there are base styles from SCSS for such inputs, they could be added here.
+     field-sizing: content; was commented out by user, likely due to compatibility or preference.
+  */
+}
+
+/* Styles for the dropdown toggle icon if needed */
+.workspace-picker .fa-chevron-down {
+    /* Tailwind classes like tw-pr-[12px] tw-pt-[5px] tw-text-[#707178] are already applied.
+     Add SCSS-derived styles here if they provide something more.
+  */
+}
+
+/*
+  NOTE: Many styles from the SCSS files are for interactive elements,
+  dynamic states (like .hide-sidebar, .active), or use SCSS variables/mixins
+  that are not directly translatable to this static CSS file without a SASS processor
+  or more complex JavaScript logic in the React components.
+  The focus here is on basic structural and visual properties that align with the example.html
+  and can be achieved with plain CSS or complement Tailwind.
+*/
