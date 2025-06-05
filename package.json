@@ -1,5 +1,6 @@
 {
     "name": "reactpermitiq-app",
+    "homepage": "https://permitIQ.github.io/LAcounty",
     "private": true,
     "version": "0.0.0",
     "type": "module",
